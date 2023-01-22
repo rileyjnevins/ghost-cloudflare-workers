@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/64431703/213896016-bff53132-479f-48c0-96c1-fbefbc111414.png)
+
 # Ghost as a Subdirectory
 This is a custom Cloudflare Worker that allows you to run your Ghost blog as a subdirectory on your domain. This allows your primary content to be hosted in a different place than your Ghost install (such as Cloudflare Pages).
 
