@@ -1,4 +1,4 @@
-#Ghost as a Subdirectory
+# Ghost as a Subdirectory
 This is a custom Cloudflare Worker that allows you to run your Ghost blog as a subdirectory on your domain.
 
 ##Installation
