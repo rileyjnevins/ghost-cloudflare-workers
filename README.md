@@ -3,8 +3,18 @@ This is a custom Cloudflare Worker that allows you to run your Ghost blog as a s
 
 ## Installation
 Create a new Cloudflare worker and paste the code from worker.js into the script editor.
-Update the GHOST_URL variable with the URL of your Ghost installation.
-Save the worker and deploy it to your desired subdirectory (e.g. example.com/blog)
+
+* Update the `subdomain` variable with the URL of your Ghost installation.
+* Update the `root` variable with the root domain of your domain (where you want the subdirectory to be).
+* Leave `blogPath` as is, ideally. However you can change this at your own risk.
+* Save the worker and create the following Worker Routes:
+
+```
+/assets*
+/public*
+/content*
+/blog*
+```
 
 ## Usage
 Once the worker is deployed, your Ghost blog will be accessible at the subdirectory specified in the installation step (e.g. example.com/blog). All requests to the subdirectory will be proxied to your Ghost installation, while requests to the rest of your domain will continue to function normally.
